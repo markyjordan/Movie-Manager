@@ -22,6 +22,7 @@
 		E291D3DB24EC944C004FCB8A /* LogoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3DA24EC944C004FCB8A /* LogoutRequest.swift */; };
 		E291D3DD24EC9486004FCB8A /* PostSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3DC24EC9486004FCB8A /* PostSession.swift */; };
 		E291D3E024EC94E3004FCB8A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3DF24EC94E3004FCB8A /* Movie.swift */; };
+		E291D3E224EC9578004FCB8A /* MovieResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3E124EC9578004FCB8A /* MovieResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		E291D3DA24EC944C004FCB8A /* LogoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequest.swift; sourceTree = "<group>"; };
 		E291D3DC24EC9486004FCB8A /* PostSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSession.swift; sourceTree = "<group>"; };
 		E291D3DF24EC94E3004FCB8A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		E291D3E124EC9578004FCB8A /* MovieResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				E291D3DF24EC94E3004FCB8A /* Movie.swift */,
+				E291D3E124EC9578004FCB8A /* MovieResults.swift */,
 			);
 			path = "TMDB Responses";
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E291D3D924EC93F9004FCB8A /* LoginRequest.swift in Sources */,
+				E291D3E224EC9578004FCB8A /* MovieResults.swift in Sources */,
 				E291D3D524EC9314004FCB8A /* MarkFavorite.swift in Sources */,
 				E291D3E024EC94E3004FCB8A /* Movie.swift in Sources */,
 				E291D3D024EC8428004FCB8A /* TMDBClient.swift in Sources */,
