@@ -24,6 +24,7 @@
 		E291D3E024EC94E3004FCB8A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3DF24EC94E3004FCB8A /* Movie.swift */; };
 		E291D3E224EC9578004FCB8A /* MovieResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3E124EC9578004FCB8A /* MovieResults.swift */; };
 		E291D3E424EC95F6004FCB8A /* RequestTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3E324EC95F6004FCB8A /* RequestTokenResponse.swift */; };
+		E291D3E624EC966F004FCB8A /* TMDBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3E524EC966F004FCB8A /* TMDBResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		E291D3DF24EC94E3004FCB8A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E291D3E124EC9578004FCB8A /* MovieResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResults.swift; sourceTree = "<group>"; };
 		E291D3E324EC95F6004FCB8A /* RequestTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenResponse.swift; sourceTree = "<group>"; };
+		E291D3E524EC966F004FCB8A /* TMDBResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				E291D3DF24EC94E3004FCB8A /* Movie.swift */,
 				E291D3E124EC9578004FCB8A /* MovieResults.swift */,
 				E291D3E324EC95F6004FCB8A /* RequestTokenResponse.swift */,
+				E291D3E524EC966F004FCB8A /* TMDBResponse.swift */,
 			);
 			path = "TMDB Responses";
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				E291D3DD24EC9486004FCB8A /* PostSession.swift in Sources */,
 				E291D3E424EC95F6004FCB8A /* RequestTokenResponse.swift in Sources */,
 				E291D3DB24EC944C004FCB8A /* LogoutRequest.swift in Sources */,
+				E291D3E624EC966F004FCB8A /* TMDBResponse.swift in Sources */,
 				E291D3D724EC93AB004FCB8A /* MarkWatchlist.swift in Sources */,
 				E28A829C24EB48A200FA1BC0 /* ViewController.swift in Sources */,
 				E28A829824EB48A200FA1BC0 /* AppDelegate.swift in Sources */,
