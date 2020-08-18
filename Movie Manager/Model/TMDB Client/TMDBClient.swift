@@ -36,4 +36,21 @@ class TMDBClient {
             return URL(string: stringValue)!
         }
     }
+    
+    class func getWatchlist(completionHandler: @escaping ([Movie], Error?) -> Void) {
+        let task = URLSession.shared.dataTask(with: Endpoints.getWatchlist.url) { data, response, error in
+            guard let data = data else {
+                completionHandler([], error)
+                return
+            }
+            let jsonDecoder = JSONDecoder()
+            do {
+                let responseObject = try jsonDecoder.decode(MovieResults.self, from: data)
+                completionHandler(responseObject.results, nil)
+            } catch {
+                completionHandler([], error)
+            }
+        }
+        task.resume()
+    }
 }
