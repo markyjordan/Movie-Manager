@@ -16,6 +16,7 @@
 		E291D3CD24EC830A004FCB8A /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3CC24EC830A004FCB8A /* MovieModel.swift */; };
 		E291D3D024EC8428004FCB8A /* TMDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3CF24EC8428004FCB8A /* TMDBClient.swift */; };
 		E291D3D224EC88D8004FCB8A /* TMDBTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3D124EC88D8004FCB8A /* TMDBTypes.swift */; };
+		E291D3D524EC9314004FCB8A /* MarkFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3D424EC9314004FCB8A /* MarkFavorite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E291D3CC24EC830A004FCB8A /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		E291D3CF24EC8428004FCB8A /* TMDBClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBClient.swift; sourceTree = "<group>"; };
 		E291D3D124EC88D8004FCB8A /* TMDBTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBTypes.swift; sourceTree = "<group>"; };
+		E291D3D424EC9314004FCB8A /* MarkFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkFavorite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				E291D3CA24EC82C2004FCB8A /* Data */,
 				E291D3CE24EC83FE004FCB8A /* TMDB Client */,
+				E291D3D324EC92CF004FCB8A /* TMDB Requests */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +117,14 @@
 				E291D3D124EC88D8004FCB8A /* TMDBTypes.swift */,
 			);
 			path = "TMDB Client";
+			sourceTree = "<group>";
+		};
+		E291D3D324EC92CF004FCB8A /* TMDB Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E291D3D424EC9314004FCB8A /* MarkFavorite.swift */,
+			);
+			path = "TMDB Requests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E291D3D524EC9314004FCB8A /* MarkFavorite.swift in Sources */,
 				E291D3D024EC8428004FCB8A /* TMDBClient.swift in Sources */,
 				E291D3CD24EC830A004FCB8A /* MovieModel.swift in Sources */,
 				E291D3D224EC88D8004FCB8A /* TMDBTypes.swift in Sources */,
