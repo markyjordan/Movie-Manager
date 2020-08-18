@@ -25,6 +25,7 @@
 		E291D3E224EC9578004FCB8A /* MovieResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3E124EC9578004FCB8A /* MovieResults.swift */; };
 		E291D3E424EC95F6004FCB8A /* RequestTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3E324EC95F6004FCB8A /* RequestTokenResponse.swift */; };
 		E291D3E624EC966F004FCB8A /* TMDBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3E524EC966F004FCB8A /* TMDBResponse.swift */; };
+		E291D3E824EC96BA004FCB8A /* SessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3E724EC96BA004FCB8A /* SessionResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		E291D3E124EC9578004FCB8A /* MovieResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResults.swift; sourceTree = "<group>"; };
 		E291D3E324EC95F6004FCB8A /* RequestTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenResponse.swift; sourceTree = "<group>"; };
 		E291D3E524EC966F004FCB8A /* TMDBResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBResponse.swift; sourceTree = "<group>"; };
+		E291D3E724EC96BA004FCB8A /* SessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				E291D3E124EC9578004FCB8A /* MovieResults.swift */,
 				E291D3E324EC95F6004FCB8A /* RequestTokenResponse.swift */,
 				E291D3E524EC966F004FCB8A /* TMDBResponse.swift */,
+				E291D3E724EC96BA004FCB8A /* SessionResponse.swift */,
 			);
 			path = "TMDB Responses";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				E291D3D924EC93F9004FCB8A /* LoginRequest.swift in Sources */,
 				E291D3E224EC9578004FCB8A /* MovieResults.swift in Sources */,
 				E291D3D524EC9314004FCB8A /* MarkFavorite.swift in Sources */,
+				E291D3E824EC96BA004FCB8A /* SessionResponse.swift in Sources */,
 				E291D3E024EC94E3004FCB8A /* Movie.swift in Sources */,
 				E291D3D024EC8428004FCB8A /* TMDBClient.swift in Sources */,
 				E291D3CD24EC830A004FCB8A /* MovieModel.swift in Sources */,
