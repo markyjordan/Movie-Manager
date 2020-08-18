@@ -14,6 +14,7 @@
 		E28A82A124EB48AC00FA1BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28A82A024EB48AC00FA1BC0 /* Assets.xcassets */; };
 		E28A82A424EB48AC00FA1BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28A82A224EB48AC00FA1BC0 /* LaunchScreen.storyboard */; };
 		E291D3CD24EC830A004FCB8A /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3CC24EC830A004FCB8A /* MovieModel.swift */; };
+		E291D3D024EC8428004FCB8A /* TMDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3CF24EC8428004FCB8A /* TMDBClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E28A82A324EB48AC00FA1BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E28A82A524EB48AC00FA1BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E291D3CC24EC830A004FCB8A /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		E291D3CF24EC8428004FCB8A /* TMDBClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				E291D3CA24EC82C2004FCB8A /* Data */,
+				E291D3CE24EC83FE004FCB8A /* TMDB Client */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +103,14 @@
 				E291D3CC24EC830A004FCB8A /* MovieModel.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		E291D3CE24EC83FE004FCB8A /* TMDB Client */ = {
+			isa = PBXGroup;
+			children = (
+				E291D3CF24EC8428004FCB8A /* TMDBClient.swift */,
+			);
+			path = "TMDB Client";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E291D3D024EC8428004FCB8A /* TMDBClient.swift in Sources */,
 				E291D3CD24EC830A004FCB8A /* MovieModel.swift in Sources */,
 				E28A829C24EB48A200FA1BC0 /* ViewController.swift in Sources */,
 				E28A829824EB48A200FA1BC0 /* AppDelegate.swift in Sources */,
