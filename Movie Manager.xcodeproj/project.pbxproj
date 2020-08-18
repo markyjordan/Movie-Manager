@@ -15,6 +15,7 @@
 		E28A82A424EB48AC00FA1BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28A82A224EB48AC00FA1BC0 /* LaunchScreen.storyboard */; };
 		E291D3CD24EC830A004FCB8A /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3CC24EC830A004FCB8A /* MovieModel.swift */; };
 		E291D3D024EC8428004FCB8A /* TMDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3CF24EC8428004FCB8A /* TMDBClient.swift */; };
+		E291D3D224EC88D8004FCB8A /* TMDBTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3D124EC88D8004FCB8A /* TMDBTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E28A82A524EB48AC00FA1BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E291D3CC24EC830A004FCB8A /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		E291D3CF24EC8428004FCB8A /* TMDBClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBClient.swift; sourceTree = "<group>"; };
+		E291D3D124EC88D8004FCB8A /* TMDBTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				E291D3CF24EC8428004FCB8A /* TMDBClient.swift */,
+				E291D3D124EC88D8004FCB8A /* TMDBTypes.swift */,
 			);
 			path = "TMDB Client";
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			files = (
 				E291D3D024EC8428004FCB8A /* TMDBClient.swift in Sources */,
 				E291D3CD24EC830A004FCB8A /* MovieModel.swift in Sources */,
+				E291D3D224EC88D8004FCB8A /* TMDBTypes.swift in Sources */,
 				E28A829C24EB48A200FA1BC0 /* ViewController.swift in Sources */,
 				E28A829824EB48A200FA1BC0 /* AppDelegate.swift in Sources */,
 				E28A829A24EB48A200FA1BC0 /* SceneDelegate.swift in Sources */,
