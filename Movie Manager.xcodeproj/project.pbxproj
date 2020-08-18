@@ -19,6 +19,7 @@
 		E291D3D524EC9314004FCB8A /* MarkFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3D424EC9314004FCB8A /* MarkFavorite.swift */; };
 		E291D3D724EC93AB004FCB8A /* MarkWatchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3D624EC93AB004FCB8A /* MarkWatchlist.swift */; };
 		E291D3D924EC93F9004FCB8A /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3D824EC93F9004FCB8A /* LoginRequest.swift */; };
+		E291D3DB24EC944C004FCB8A /* LogoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3DA24EC944C004FCB8A /* LogoutRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E291D3D424EC9314004FCB8A /* MarkFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkFavorite.swift; sourceTree = "<group>"; };
 		E291D3D624EC93AB004FCB8A /* MarkWatchlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkWatchlist.swift; sourceTree = "<group>"; };
 		E291D3D824EC93F9004FCB8A /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		E291D3DA24EC944C004FCB8A /* LogoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				E291D3D424EC9314004FCB8A /* MarkFavorite.swift */,
 				E291D3D624EC93AB004FCB8A /* MarkWatchlist.swift */,
 				E291D3D824EC93F9004FCB8A /* LoginRequest.swift */,
+				E291D3DA24EC944C004FCB8A /* LogoutRequest.swift */,
 			);
 			path = "TMDB Requests";
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				E291D3D024EC8428004FCB8A /* TMDBClient.swift in Sources */,
 				E291D3CD24EC830A004FCB8A /* MovieModel.swift in Sources */,
 				E291D3D224EC88D8004FCB8A /* TMDBTypes.swift in Sources */,
+				E291D3DB24EC944C004FCB8A /* LogoutRequest.swift in Sources */,
 				E291D3D724EC93AB004FCB8A /* MarkWatchlist.swift in Sources */,
 				E28A829C24EB48A200FA1BC0 /* ViewController.swift in Sources */,
 				E28A829824EB48A200FA1BC0 /* AppDelegate.swift in Sources */,
