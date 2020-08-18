@@ -17,4 +17,23 @@ class TMDBClient {
         static var requestToken = ""
         static var sessionId = ""
     }
+    
+    enum Endpoints {
+        static let base = "https://api.themoviedb.org/3"
+        static let apiKeyParam = "?api_key=\(TMDBClient.apiKey)"
+        
+        case getWatchlist
+        
+        var stringValue: String {
+            switch self {
+            case .getWatchlist:
+                return Endpoints.base + "/account/\(Auth.accountId)/watchlist/movies" + Endpoints.apiKeyParam + "&session_id=\(Auth.sessionId)"
+            }
+        }
+        
+        // generate a URL from the endpoint's associated string value
+        var url: URL {
+            return URL(string: stringValue)!
+        }
+    }
 }
