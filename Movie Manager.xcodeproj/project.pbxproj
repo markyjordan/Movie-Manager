@@ -27,6 +27,8 @@
 		E291D3E624EC966F004FCB8A /* TMDBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3E524EC966F004FCB8A /* TMDBResponse.swift */; };
 		E291D3E824EC96BA004FCB8A /* SessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3E724EC96BA004FCB8A /* SessionResponse.swift */; };
 		E291D3EA24EC9714004FCB8A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3E924EC9714004FCB8A /* Colors.swift */; };
+		E291D3EC24EC97FE004FCB8A /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3EB24EC97FE004FCB8A /* LoginButton.swift */; };
+		E291D3EE24EC9A0E004FCB8A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3ED24EC9A0E004FCB8A /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		E291D3E524EC966F004FCB8A /* TMDBResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBResponse.swift; sourceTree = "<group>"; };
 		E291D3E724EC96BA004FCB8A /* SessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResponse.swift; sourceTree = "<group>"; };
 		E291D3E924EC9714004FCB8A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E291D3EB24EC97FE004FCB8A /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		E291D3ED24EC9A0E004FCB8A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				E291D3E924EC9714004FCB8A /* Colors.swift */,
+				E291D3EB24EC97FE004FCB8A /* LoginButton.swift */,
+				E291D3ED24EC9A0E004FCB8A /* GradientView.swift */,
 				E28A829D24EB48A200FA1BC0 /* Main.storyboard */,
 				E28A82A224EB48AC00FA1BC0 /* LaunchScreen.storyboard */,
 				E28A82A024EB48AC00FA1BC0 /* Assets.xcassets */,
@@ -236,7 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E291D3EE24EC9A0E004FCB8A /* GradientView.swift in Sources */,
 				E291D3D924EC93F9004FCB8A /* LoginRequest.swift in Sources */,
+				E291D3EC24EC97FE004FCB8A /* LoginButton.swift in Sources */,
 				E291D3E224EC9578004FCB8A /* MovieResults.swift in Sources */,
 				E291D3D524EC9314004FCB8A /* MarkFavorite.swift in Sources */,
 				E291D3EA24EC9714004FCB8A /* Colors.swift in Sources */,
