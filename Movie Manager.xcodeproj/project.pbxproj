@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2894FBC24EDE19900C8146A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2894FBB24EDE19900C8146A /* Colors.xcassets */; };
 		E28A829824EB48A200FA1BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A829724EB48A200FA1BC0 /* AppDelegate.swift */; };
 		E28A829A24EB48A200FA1BC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A829924EB48A200FA1BC0 /* SceneDelegate.swift */; };
 		E28A829C24EB48A200FA1BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A829B24EB48A200FA1BC0 /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2894FBB24EDE19900C8146A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		E28A829424EB48A200FA1BC0 /* Movie Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28A829724EB48A200FA1BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E28A829924EB48A200FA1BC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2894FBA24EDE13400C8146A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E28A82A024EB48AC00FA1BC0 /* Assets.xcassets */,
+				E2894FBB24EDE19900C8146A /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		E28A828B24EB48A200FA1BC0 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +108,7 @@
 				E28A829724EB48A200FA1BC0 /* AppDelegate.swift */,
 				E28A829924EB48A200FA1BC0 /* SceneDelegate.swift */,
 				E28A829B24EB48A200FA1BC0 /* ViewController.swift */,
+				E2894FBA24EDE13400C8146A /* Assets */,
 			);
 			path = "Movie Manager";
 			sourceTree = "<group>";
@@ -121,7 +133,6 @@
 				E291D3EF24ECC31C004FCB8A /* LoginTextField.swift */,
 				E28A829D24EB48A200FA1BC0 /* Main.storyboard */,
 				E28A82A224EB48AC00FA1BC0 /* LaunchScreen.storyboard */,
-				E28A82A024EB48AC00FA1BC0 /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E28A82A424EB48AC00FA1BC0 /* LaunchScreen.storyboard in Resources */,
+				E2894FBC24EDE19900C8146A /* Colors.xcassets in Resources */,
 				E28A82A124EB48AC00FA1BC0 /* Assets.xcassets in Resources */,
 				E28A829F24EB48A200FA1BC0 /* Main.storyboard in Resources */,
 			);
