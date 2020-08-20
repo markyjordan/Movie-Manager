@@ -27,12 +27,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ozo-52-5xZ">
+                                <rect key="frame" x="16" y="305" width="382" height="296"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.057738117870000001" green="0.69891411069999998" blue="0.89415168759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="3ky-mf-fcm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CRA-Qt-bGG"/>
                             <constraint firstItem="M8Y-e4-Esw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QgH-TK-c8G"/>
+                            <constraint firstItem="ozo-52-5xZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XE6-gd-E4g"/>
                             <constraint firstItem="M8Y-e4-Esw" firstAttribute="top" secondItem="3ky-mf-fcm" secondAttribute="bottom" constant="8" id="Xbd-02-4av"/>
+                            <constraint firstItem="ozo-52-5xZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="jxI-Qf-Nz6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ozo-52-5xZ" secondAttribute="trailing" constant="16" id="nEd-RU-sgY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ky-mf-fcm" secondAttribute="trailing" constant="16" id="oaF-pm-Xwl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M8Y-e4-Esw" secondAttribute="trailing" constant="16" id="zI1-DF-LWe"/>
                             <constraint firstItem="3ky-mf-fcm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zOc-j9-QmG"/>
