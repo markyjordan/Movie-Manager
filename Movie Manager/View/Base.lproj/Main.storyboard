@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ozo-52-5xZ">
-                                <rect key="frame" x="16" y="443" width="382" height="20.5"/>
+                                <rect key="frame" x="16" y="421" width="382" height="64.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlV-hw-MFf" userLabel="Login with Email">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
@@ -36,6 +36,14 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aC6-zL-px5" userLabel="Email Text Field">
+                                        <rect key="frame" x="0.0" y="32.5" width="382" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="HmI-JK-hC6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </stackView>
                         </subviews>
