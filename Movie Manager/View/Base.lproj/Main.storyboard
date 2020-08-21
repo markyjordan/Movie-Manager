@@ -74,16 +74,25 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This product uses the TMDb API but is not endorsed or certified by TMDb." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubB-pI-4Tm" userLabel="This product uses the TMDb API but is not endorsed or certified by TMDb.">
+                                <rect key="frame" x="16" y="801" width="382" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.057738117870000001" green="0.69891411069999998" blue="0.89415168759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="3ky-mf-fcm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CRA-Qt-bGG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ubB-pI-4Tm" secondAttribute="trailing" constant="16" id="HBc-Dp-qOk"/>
                             <constraint firstItem="M8Y-e4-Esw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QgH-TK-c8G"/>
                             <constraint firstItem="ozo-52-5xZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XE6-gd-E4g"/>
                             <constraint firstItem="M8Y-e4-Esw" firstAttribute="top" secondItem="3ky-mf-fcm" secondAttribute="bottom" constant="8" id="Xbd-02-4av"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ubB-pI-4Tm" secondAttribute="bottom" constant="20" id="eV7-ba-Xtz"/>
                             <constraint firstItem="ozo-52-5xZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="jxI-Qf-Nz6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ozo-52-5xZ" secondAttribute="trailing" constant="16" id="nEd-RU-sgY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ky-mf-fcm" secondAttribute="trailing" constant="16" id="oaF-pm-Xwl"/>
+                            <constraint firstItem="ubB-pI-4Tm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xgh-R6-XmH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M8Y-e4-Esw" secondAttribute="trailing" constant="16" id="zI1-DF-LWe"/>
                             <constraint firstItem="3ky-mf-fcm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zOc-j9-QmG"/>
                         </constraints>
