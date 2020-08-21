@@ -125,7 +125,7 @@
             </objects>
             <point key="canvasLocation" x="549" y="29"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Search-->
         <scene sceneID="2FK-N4-hOw">
             <objects>
                 <tableViewController id="NfP-JD-HXt" sceneMemberID="viewController">
@@ -148,13 +148,13 @@
                             <outlet property="delegate" destination="NfP-JD-HXt" id="le0-Xf-mof"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="M5P-rb-Wra"/>
+                    <navigationItem key="navigationItem" title="Search" id="M5P-rb-Wra"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3o4-GT-6dK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2386" y="-706"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Watchlist-->
         <scene sceneID="G3g-OX-9O6">
             <objects>
                 <tableViewController id="nwb-5l-1Re" sceneMemberID="viewController">
@@ -177,13 +177,13 @@
                             <outlet property="delegate" destination="nwb-5l-1Re" id="oL5-nq-fkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="bWe-qb-vfi"/>
+                    <navigationItem key="navigationItem" title="Watchlist" id="bWe-qb-vfi"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZK-Xk-mvj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2386" y="29"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Favorites-->
         <scene sceneID="UPR-To-BeD">
             <objects>
                 <tableViewController id="KR2-oV-MiF" sceneMemberID="viewController">
@@ -206,7 +206,7 @@
                             <outlet property="delegate" destination="KR2-oV-MiF" id="s9f-Pa-bac"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="DMh-67-c0T"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="DMh-67-c0T"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xqi-hp-bMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
