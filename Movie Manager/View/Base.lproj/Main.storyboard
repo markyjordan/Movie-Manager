@@ -229,11 +229,11 @@
             </objects>
             <point key="canvasLocation" x="1470" y="764"/>
         </scene>
-        <!--Item-->
+        <!--Watchlist-->
         <scene sceneID="p5s-w6-Fmh">
             <objects>
                 <navigationController id="Jl2-cu-JUn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ALN-fY-bsv"/>
+                    <tabBarItem key="tabBarItem" title="Watchlist" image="List" id="ALN-fY-bsv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h1Q-68-cQw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -267,5 +267,6 @@
     <resources>
         <image name="Camera" width="64" height="64"/>
         <image name="Genre" width="30" height="30"/>
+        <image name="List" width="32" height="32"/>
     </resources>
 </document>
