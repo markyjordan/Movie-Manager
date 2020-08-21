@@ -177,6 +177,9 @@
                     <navigationItem key="navigationItem" title="Favorites" id="ph7-nC-l20">
                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="nQG-Qg-ftV"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="ytH-1y-VJE" kind="show" id="gdW-bl-DaD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3c0-nW-Txt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,16 +248,16 @@
         <!--View Controller-->
         <scene sceneID="o0k-Zt-x0R">
             <objects>
-                <viewController id="ytH-1y-VJE" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="ytH-1y-VJE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LhL-L6-JBD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EWt-B6-HAI">
-                                <rect key="frame" x="0.0" y="56" width="375" height="498"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="547"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOb-qD-qK5">
-                                <rect key="frame" x="0.0" y="534" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="603" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="fqb-lz-N9a"/>
                                 </constraints>
@@ -341,12 +344,18 @@
                     <navigationItem key="navigationItem" title="Search" id="Ln7-Kr-Pm6">
                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="0oy-8E-cgh"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="ytH-1y-VJE" kind="show" id="m9f-8K-a2L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J8I-B2-sEy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2380" y="-743.47826086956525"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gdW-bl-DaD"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Camera" width="64" height="64"/>
         <image name="Favorite" width="32" height="32"/>
