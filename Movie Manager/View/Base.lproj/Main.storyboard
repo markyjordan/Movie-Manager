@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ozo-52-5xZ">
-                                <rect key="frame" x="16" y="360.5" width="382" height="185"/>
+                                <rect key="frame" x="16" y="338.5" width="382" height="229"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlV-hw-MFf" userLabel="Login with Email">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
@@ -65,6 +65,13 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVp-Im-tuY">
+                                        <rect key="frame" x="0.0" y="197" width="382" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="y6T-Es-wuO"/>
+                                        </constraints>
+                                        <state key="normal" title="Login via Website"/>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
