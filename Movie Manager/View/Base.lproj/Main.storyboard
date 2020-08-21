@@ -234,10 +234,53 @@
                     <navigationItem key="navigationItem" title="Watchlist" id="EPa-ia-wCX">
                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="z93-3t-qES"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="ytH-1y-VJE" kind="show" id="nmE-Ok-JdI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Kb-Jy-q8u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2380" y="27.436281859070466"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o0k-Zt-x0R">
+            <objects>
+                <viewController id="ytH-1y-VJE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LhL-L6-JBD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EWt-B6-HAI">
+                                <rect key="frame" x="0.0" y="56" width="375" height="498"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOb-qD-qK5">
+                                <rect key="frame" x="0.0" y="534" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="fqb-lz-N9a"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem image="List" id="num-Uh-rL1" userLabel="Watchlist Bar Button Item"/>
+                                    <barButtonItem image="Favorite" id="A0C-SK-PTe" userLabel="Favorites Bar Button Item"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EWt-B6-HAI" firstAttribute="top" secondItem="0Ux-su-S9o" secondAttribute="top" id="Gbv-AA-7W5"/>
+                            <constraint firstItem="JOb-qD-qK5" firstAttribute="bottom" secondItem="0Ux-su-S9o" secondAttribute="bottom" id="JOW-2m-HvW"/>
+                            <constraint firstItem="JOb-qD-qK5" firstAttribute="trailing" secondItem="0Ux-su-S9o" secondAttribute="trailing" id="Luu-Fs-8lz"/>
+                            <constraint firstItem="JOb-qD-qK5" firstAttribute="top" secondItem="EWt-B6-HAI" secondAttribute="bottom" id="RSe-E3-dnF"/>
+                            <constraint firstItem="0Ux-su-S9o" firstAttribute="trailing" secondItem="EWt-B6-HAI" secondAttribute="trailing" id="g0F-G2-NL6"/>
+                            <constraint firstItem="EWt-B6-HAI" firstAttribute="leading" secondItem="0Ux-su-S9o" secondAttribute="leading" id="jKL-5E-409"/>
+                            <constraint firstItem="JOb-qD-qK5" firstAttribute="leading" secondItem="0Ux-su-S9o" secondAttribute="leading" id="uZn-7Q-xvf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Ux-su-S9o"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aer-eE-flN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egQ-cx-Vxc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3282.4000000000001" y="27.436281859070466"/>
         </scene>
         <!--Search-->
         <scene sceneID="6Yt-Ap-qKX">
