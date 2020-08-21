@@ -246,11 +246,11 @@
             </objects>
             <point key="canvasLocation" x="1470" y="29"/>
         </scene>
-        <!--Item-->
+        <!--Search-->
         <scene sceneID="6Yt-Ap-qKX">
             <objects>
                 <navigationController id="6v1-5V-rjI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="XPk-Th-jPM"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="Genre" id="XPk-Th-jPM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sT8-0K-Vcq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -266,5 +266,6 @@
     </scenes>
     <resources>
         <image name="Camera" width="64" height="64"/>
+        <image name="Genre" width="30" height="30"/>
     </resources>
 </document>
