@@ -321,7 +321,7 @@
         <!--Search-->
         <scene sceneID="UjR-WH-IL6">
             <objects>
-                <viewController title="Search" id="v26-Ej-RVd" userLabel="Search" sceneMemberID="viewController">
+                <viewController title="Search" id="v26-Ej-RVd" userLabel="Search" customClass="SearchViewController" customModule="Movie_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TZF-RM-LVc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -361,6 +361,8 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="0oy-8E-cgh"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="3yb-it-wSj" id="dww-Qr-Vd1"/>
+                        <outlet property="tableView" destination="5JG-0q-2rA" id="BUu-pm-3d3"/>
                         <segue destination="ytH-1y-VJE" kind="show" id="m9f-8K-a2L"/>
                     </connections>
                 </viewController>
@@ -370,7 +372,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gdW-bl-DaD"/>
+        <segue reference="m9f-8K-a2L"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Camera" width="64" height="64"/>
