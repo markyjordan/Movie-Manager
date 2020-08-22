@@ -256,10 +256,10 @@
             </objects>
             <point key="canvasLocation" x="2380" y="27.436281859070466"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Detail View Controller-->
         <scene sceneID="o0k-Zt-x0R">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="ytH-1y-VJE" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="ytH-1y-VJE" customClass="MovieDetailViewController" customModule="Movie_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LhL-L6-JBD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -291,6 +291,11 @@
                         <viewLayoutGuide key="safeArea" id="0Ux-su-S9o"/>
                     </view>
                     <navigationItem key="navigationItem" id="aer-eE-flN"/>
+                    <connections>
+                        <outlet property="favoritesBarButtonItem" destination="A0C-SK-PTe" id="geQ-yL-Kw8"/>
+                        <outlet property="imageView" destination="EWt-B6-HAI" id="8AP-9S-Ud2"/>
+                        <outlet property="watchListBarButtonItem" destination="num-Uh-rL1" id="xpl-F7-NZY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egQ-cx-Vxc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E2894FBC24EDE19900C8146A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2894FBB24EDE19900C8146A /* Colors.xcassets */; };
+		E2894FBE24F09E2400C8146A /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894FBD24F09E2400C8146A /* MovieDetailViewController.swift */; };
 		E28A829824EB48A200FA1BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A829724EB48A200FA1BC0 /* AppDelegate.swift */; };
 		E28A829A24EB48A200FA1BC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A829924EB48A200FA1BC0 /* SceneDelegate.swift */; };
 		E28A829C24EB48A200FA1BC0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A829B24EB48A200FA1BC0 /* LoginViewController.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		E2894FBB24EDE19900C8146A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E2894FBD24F09E2400C8146A /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		E28A829424EB48A200FA1BC0 /* Movie Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28A829724EB48A200FA1BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E28A829924EB48A200FA1BC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +109,6 @@
 				E28A82AB24EB493C00FA1BC0 /* Model */,
 				E28A82AC24EB494400FA1BC0 /* View */,
 				E28A82AD24EB494A00FA1BC0 /* Controller */,
-				E28A829B24EB48A200FA1BC0 /* LoginViewController.swift */,
 				E2894FBA24EDE13400C8146A /* Assets */,
 			);
 			path = "Movie Manager";
@@ -140,6 +141,8 @@
 		E28A82AD24EB494A00FA1BC0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E28A829B24EB48A200FA1BC0 /* LoginViewController.swift */,
+				E2894FBD24F09E2400C8146A /* MovieDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				E291D3D924EC93F9004FCB8A /* LoginRequest.swift in Sources */,
 				E291D3EC24EC97FE004FCB8A /* LoginButton.swift in Sources */,
 				E291D3E224EC9578004FCB8A /* MovieResults.swift in Sources */,
+				E2894FBE24F09E2400C8146A /* MovieDetailViewController.swift in Sources */,
 				E291D3D524EC9314004FCB8A /* MarkFavorite.swift in Sources */,
 				E291D3EA24EC9714004FCB8A /* Colors.swift in Sources */,
 				E291D3E824EC96BA004FCB8A /* SessionResponse.swift in Sources */,

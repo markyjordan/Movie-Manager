@@ -10,6 +10,6 @@ import Foundation
 
 class MovieModel {
     
-    static var watchList = [Movie]()
+    static var watchlist = [Movie]()
     static var favorites = [Movie]()
 }
