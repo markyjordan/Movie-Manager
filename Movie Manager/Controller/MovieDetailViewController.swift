@@ -56,6 +56,4 @@ class MovieDetailViewController: UIViewController {
             button.tintColor = UIColor.gray
         }
     }
-    
-    
 }
