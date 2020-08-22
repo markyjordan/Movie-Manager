@@ -11,6 +11,7 @@
 		E2894FBE24F09E2400C8146A /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894FBD24F09E2400C8146A /* MovieDetailViewController.swift */; };
 		E2894FC024F0A1EF00C8146A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894FBF24F0A1EF00C8146A /* SearchViewController.swift */; };
 		E2894FC224F0A40700C8146A /* WatchlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894FC124F0A40700C8146A /* WatchlistViewController.swift */; };
+		E2894FC424F0F4D900C8146A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894FC324F0F4D900C8146A /* FavoritesViewController.swift */; };
 		E28A829824EB48A200FA1BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A829724EB48A200FA1BC0 /* AppDelegate.swift */; };
 		E28A829A24EB48A200FA1BC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A829924EB48A200FA1BC0 /* SceneDelegate.swift */; };
 		E28A829C24EB48A200FA1BC0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A829B24EB48A200FA1BC0 /* LoginViewController.swift */; };
@@ -41,6 +42,7 @@
 		E2894FBD24F09E2400C8146A /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		E2894FBF24F0A1EF00C8146A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E2894FC124F0A40700C8146A /* WatchlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistViewController.swift; sourceTree = "<group>"; };
+		E2894FC324F0F4D900C8146A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		E28A829424EB48A200FA1BC0 /* Movie Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28A829724EB48A200FA1BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E28A829924EB48A200FA1BC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				E28A829B24EB48A200FA1BC0 /* LoginViewController.swift */,
 				E2894FBF24F0A1EF00C8146A /* SearchViewController.swift */,
 				E2894FC124F0A40700C8146A /* WatchlistViewController.swift */,
+				E2894FC324F0F4D900C8146A /* FavoritesViewController.swift */,
 				E2894FBD24F09E2400C8146A /* MovieDetailViewController.swift */,
 			);
 			path = Controller;
@@ -276,6 +279,7 @@
 				E291D3E824EC96BA004FCB8A /* SessionResponse.swift in Sources */,
 				E291D3E024EC94E3004FCB8A /* Movie.swift in Sources */,
 				E291D3D024EC8428004FCB8A /* TMDBClient.swift in Sources */,
+				E2894FC424F0F4D900C8146A /* FavoritesViewController.swift in Sources */,
 				E291D3F024ECC31C004FCB8A /* LoginTextField.swift in Sources */,
 				E291D3CD24EC830A004FCB8A /* MovieModel.swift in Sources */,
 				E2894FC024F0A1EF00C8146A /* SearchViewController.swift in Sources */,
