@@ -10,6 +10,7 @@
 		E2894FBC24EDE19900C8146A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2894FBB24EDE19900C8146A /* Colors.xcassets */; };
 		E2894FBE24F09E2400C8146A /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894FBD24F09E2400C8146A /* MovieDetailViewController.swift */; };
 		E2894FC024F0A1EF00C8146A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894FBF24F0A1EF00C8146A /* SearchViewController.swift */; };
+		E2894FC224F0A40700C8146A /* WatchlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894FC124F0A40700C8146A /* WatchlistViewController.swift */; };
 		E28A829824EB48A200FA1BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A829724EB48A200FA1BC0 /* AppDelegate.swift */; };
 		E28A829A24EB48A200FA1BC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A829924EB48A200FA1BC0 /* SceneDelegate.swift */; };
 		E28A829C24EB48A200FA1BC0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A829B24EB48A200FA1BC0 /* LoginViewController.swift */; };
@@ -39,6 +40,7 @@
 		E2894FBB24EDE19900C8146A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		E2894FBD24F09E2400C8146A /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		E2894FBF24F0A1EF00C8146A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E2894FC124F0A40700C8146A /* WatchlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistViewController.swift; sourceTree = "<group>"; };
 		E28A829424EB48A200FA1BC0 /* Movie Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28A829724EB48A200FA1BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E28A829924EB48A200FA1BC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			children = (
 				E28A829B24EB48A200FA1BC0 /* LoginViewController.swift */,
 				E2894FBF24F0A1EF00C8146A /* SearchViewController.swift */,
+				E2894FC124F0A40700C8146A /* WatchlistViewController.swift */,
 				E2894FBD24F09E2400C8146A /* MovieDetailViewController.swift */,
 			);
 			path = Controller;
@@ -282,6 +285,7 @@
 				E291D3DB24EC944C004FCB8A /* LogoutRequest.swift in Sources */,
 				E291D3E624EC966F004FCB8A /* TMDBResponse.swift in Sources */,
 				E291D3D724EC93AB004FCB8A /* MarkWatchlist.swift in Sources */,
+				E2894FC224F0A40700C8146A /* WatchlistViewController.swift in Sources */,
 				E28A829C24EB48A200FA1BC0 /* LoginViewController.swift in Sources */,
 				E28A829824EB48A200FA1BC0 /* AppDelegate.swift in Sources */,
 				E28A829A24EB48A200FA1BC0 /* SceneDelegate.swift in Sources */,

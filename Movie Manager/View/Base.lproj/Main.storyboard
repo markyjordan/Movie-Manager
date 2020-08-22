@@ -156,7 +156,7 @@
         <!--Favorites-->
         <scene sceneID="dV1-mL-R1a">
             <objects>
-                <viewController id="HR4-Cu-EH5" sceneMemberID="viewController">
+                <viewController id="HR4-Cu-EH5" customClass="WatchlistViewController" customModule="Movie_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GQd-Dt-rkr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,7 +216,7 @@
         <!--Watchlist-->
         <scene sceneID="XYi-n3-Qzn">
             <objects>
-                <viewController id="kEe-hW-vKJ" sceneMemberID="viewController">
+                <viewController id="kEe-hW-vKJ" customClass="WatchlistViewController" customModule="Movie_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Cm-yI-7ug">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,6 +249,7 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="z93-3t-qES"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="3bt-XR-pgU" id="yHN-rh-uBx"/>
                         <segue destination="ytH-1y-VJE" kind="show" id="nmE-Ok-JdI"/>
                     </connections>
                 </viewController>
@@ -372,7 +373,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="m9f-8K-a2L"/>
+        <segue reference="nmE-Ok-JdI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Camera" width="64" height="64"/>
