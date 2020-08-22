@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Movie_Manager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Movie_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Gradient View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,6 +58,9 @@
                                             <constraint firstAttribute="height" constant="32" id="XU9-kj-mf0"/>
                                         </constraints>
                                         <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ZE-oA-lUu"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyD-ac-D5h">
                                         <rect key="frame" x="0.0" y="164.5" width="343" height="20.5"/>
@@ -71,6 +74,9 @@
                                             <constraint firstAttribute="height" constant="32" id="y6T-Es-wuO"/>
                                         </constraints>
                                         <state key="normal" title="Login via Website"/>
+                                        <connections>
+                                            <action selector="loginViaWebsiteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gxE-8Z-HAg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -99,6 +105,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="aC6-zL-px5" id="MCt-82-aGg"/>
+                        <outlet property="emailTextField1" destination="aC6-zL-px5" id="OGk-FB-GnC"/>
+                        <outlet property="loginButton" destination="jEo-n8-Msz" id="TFM-dm-Cps"/>
+                        <outlet property="loginViaWebsiteButton" destination="mVp-Im-tuY" id="jK6-7N-6rK"/>
+                        <outlet property="passwordTextField" destination="5J0-N5-ExM" id="4fn-QQ-jps"/>
                         <segue destination="hXi-m8-Eja" kind="presentation" identifier="completeLogin" id="B2B-yo-vJ2"/>
                     </connections>
                 </viewController>
