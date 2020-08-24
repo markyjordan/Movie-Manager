@@ -6,4 +6,4 @@
 //  Copyright © 2020 Marky Jordan. All rights reserved.
 //
 
-let myTmdbApiKey: String = "98aacce3a82ea00687f71fac995140cf"
+let myTmdbApiKey: String = ""
