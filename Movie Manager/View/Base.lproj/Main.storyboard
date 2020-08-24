@@ -76,6 +76,7 @@
                                         <state key="normal" title="Login via Website"/>
                                         <connections>
                                             <action selector="loginViaWebsiteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gxE-8Z-HAg"/>
+                                            <action selector="loginViaWebsiteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7O8-VJ-rWN"/>
                                         </connections>
                                     </button>
                                 </subviews>
