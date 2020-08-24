@@ -186,7 +186,11 @@
                         <viewLayoutGuide key="safeArea" id="xEb-Lw-vep"/>
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="ph7-nC-l20">
-                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="nQG-Qg-ftV"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="nQG-Qg-ftV">
+                            <connections>
+                                <action selector="logoutTapped:" destination="HR4-Cu-EH5" id="jLf-04-R03"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="mX2-Hb-sgl" id="LVW-JT-ZFS"/>
@@ -247,7 +251,11 @@
                         <viewLayoutGuide key="safeArea" id="xgK-mp-vdV"/>
                     </view>
                     <navigationItem key="navigationItem" title="Watchlist" id="EPa-ia-wCX">
-                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="z93-3t-qES"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="z93-3t-qES">
+                            <connections>
+                                <action selector="logoutTapped:" destination="kEe-hW-vKJ" id="Zpg-9T-zKu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="3bt-XR-pgU" id="yHN-rh-uBx"/>
@@ -360,7 +368,11 @@
                         <viewLayoutGuide key="safeArea" id="Jvh-z7-1Yi"/>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="Ln7-Kr-Pm6">
-                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="0oy-8E-cgh"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="0oy-8E-cgh">
+                            <connections>
+                                <action selector="logoutTapped:" destination="v26-Ej-RVd" id="1na-EX-6u9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="3yb-it-wSj" id="dww-Qr-Vd1"/>
