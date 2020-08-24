@@ -19,6 +19,7 @@
 		E28A82A124EB48AC00FA1BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28A82A024EB48AC00FA1BC0 /* Assets.xcassets */; };
 		E28A82A424EB48AC00FA1BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28A82A224EB48AC00FA1BC0 /* LaunchScreen.storyboard */; };
 		E28ACF9024F3508D00B8C8F0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28ACF8F24F3508D00B8C8F0 /* UIViewController+Extension.swift */; };
+		E28ACF9224F3639700B8C8F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28ACF9124F3639700B8C8F0 /* Constants.swift */; };
 		E291D3CD24EC830A004FCB8A /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3CC24EC830A004FCB8A /* MovieModel.swift */; };
 		E291D3D024EC8428004FCB8A /* TMDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3CF24EC8428004FCB8A /* TMDBClient.swift */; };
 		E291D3D224EC88D8004FCB8A /* TMDBTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291D3D124EC88D8004FCB8A /* TMDBTypes.swift */; };
@@ -53,6 +54,7 @@
 		E28A82A324EB48AC00FA1BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E28A82A524EB48AC00FA1BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E28ACF8F24F3508D00B8C8F0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		E28ACF9124F3639700B8C8F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E291D3CC24EC830A004FCB8A /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		E291D3CF24EC8428004FCB8A /* TMDBClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBClient.swift; sourceTree = "<group>"; };
 		E291D3D124EC88D8004FCB8A /* TMDBTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBTypes.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				E28A82A524EB48AC00FA1BC0 /* Info.plist */,
 				E28A829724EB48A200FA1BC0 /* AppDelegate.swift */,
 				E28A829924EB48A200FA1BC0 /* SceneDelegate.swift */,
+				E28ACF9124F3639700B8C8F0 /* Constants.swift */,
 				E28A82AB24EB493C00FA1BC0 /* Model */,
 				E28A82AC24EB494400FA1BC0 /* View */,
 				E28A82AD24EB494A00FA1BC0 /* Controller */,
@@ -279,6 +282,7 @@
 				E2894FBE24F09E2400C8146A /* MovieDetailViewController.swift in Sources */,
 				E291D3D524EC9314004FCB8A /* MarkFavorite.swift in Sources */,
 				E291D3EA24EC9714004FCB8A /* Colors.swift in Sources */,
+				E28ACF9224F3639700B8C8F0 /* Constants.swift in Sources */,
 				E291D3E824EC96BA004FCB8A /* SessionResponse.swift in Sources */,
 				E291D3E024EC94E3004FCB8A /* Movie.swift in Sources */,
 				E291D3D024EC8428004FCB8A /* TMDBClient.swift in Sources */,
