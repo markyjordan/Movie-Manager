@@ -22,6 +22,7 @@ class TMDBClient {
         static let base = "https://api.themoviedb.org/3"
         static let apiKeyParam = "?api_key=\(TMDBClient.apiKey)"
         
+        case getRequestToken
         case getWatchlist
         
         var stringValue: String {
