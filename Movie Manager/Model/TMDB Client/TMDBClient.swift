@@ -40,6 +40,25 @@ class TMDBClient {
         }
     }
     
+    // get the request token
+    class func getRequestToken(completionHandler: @escaping (Bool, Error?) -> Void) {
+        let task = URLSession.shared.dataTask(with: Endpoints.getRequestToken.url) { data, response, error in
+            guard let data = data else {
+                completionHandler(false, error)
+                return
+            }
+            let jsonDecoder = JSONDecoder()
+            do {
+                let responseObject = try jsonDecoder.decode(RequestTokenResponse.self, from: data)
+                completionHandler(true, nil)
+            } catch {
+                completionHandler(false, error)
+            }
+        }
+        task.resume()
+    }
+    
+    // get the watchlist
     class func getWatchlist(completionHandler: @escaping ([Movie], Error?) -> Void) {
         let task = URLSession.shared.dataTask(with: Endpoints.getWatchlist.url) { data, response, error in
             guard let data = data else {
