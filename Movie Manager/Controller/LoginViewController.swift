@@ -30,10 +30,18 @@ class LoginViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func loginTapped(_ sender: UIButton) {
+        TMDBClient.getRequestToken(completionHandler: handleRequestTokenResponse(success:error:))
         performSegue(withIdentifier: "completeLogin", sender: nil)
     }
     
     @IBAction func loginViaWebsiteTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "completeLogin", sender: nil)
+    }
+    
+    // get request token completion handler
+    func handleRequestTokenResponse(success: Bool, error: Error?) {
+        if success {
+            print(TMDBClient.Auth.requestToken)
+        }
     }
 }
