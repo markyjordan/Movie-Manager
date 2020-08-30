@@ -40,6 +40,8 @@ class TMDBClient {
         }
     }
     
+    // MARK: - Network Requests
+    
     // get the request token
     class func getRequestToken(completionHandler: @escaping (Bool, Error?) -> Void) {
         let task = URLSession.shared.dataTask(with: Endpoints.getRequestToken.url) { data, response, error in
