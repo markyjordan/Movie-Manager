@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
         performSegue(withIdentifier: "completeLogin", sender: nil)
     }
     
-    // get request token completion handler
+    // completion handler for getRequestToken
     func handleRequestTokenResponse(success: Bool, error: Error?) {
         if success {
             print(TMDBClient.Auth.requestToken)
