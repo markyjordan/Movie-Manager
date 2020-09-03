@@ -22,13 +22,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="3ky-mf-fcm">
-                                <rect key="frame" x="16" y="109" width="343" height="128"/>
+                                <rect key="frame" x="16" y="91" width="343" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Zzx-JN-No3"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Movie Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8Y-e4-Esw" userLabel="The Movie Manager">
-                                <rect key="frame" x="16" y="245" width="343" height="33.5"/>
+                                <rect key="frame" x="16" y="227" width="343" height="33.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -90,7 +90,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.057738117870000001" green="0.69891411069999998" blue="0.89415168759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="3ky-mf-fcm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="CRA-Qt-bGG"/>
+                            <constraint firstItem="3ky-mf-fcm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="91" id="CRA-Qt-bGG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ubB-pI-4Tm" secondAttribute="trailing" constant="16" id="HBc-Dp-qOk"/>
                             <constraint firstItem="M8Y-e4-Esw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QgH-TK-c8G"/>
                             <constraint firstItem="ozo-52-5xZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XE6-gd-E4g"/>
