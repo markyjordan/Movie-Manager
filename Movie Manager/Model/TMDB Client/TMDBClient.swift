@@ -81,5 +81,29 @@ class TMDBClient {
         }
         task.resume()
     }
+    
+    //
+    class func login(username: String, password: String, completionHandler: @escaping (Bool, Error?) -> Void) {
+        var request = URLRequest(url: Endpoints.login.url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        let body = LoginRequest(username: username, password: password, requestToken: Auth.requestToken)
+        request.httpBody = try! JSONEncoder().encode(body)
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error ) in
+            guard let data = data else {
+                completionHandler(false, error)
+                return
+            }
+            do {
+                let jsonDecoder = JSONDecoder()
+                let responseObject = try jsonDecoder.decode(RequestTokenResponse.self, from: data)
+                Auth.requestToken = responseObject.requestToken
+                completionHandler(true, nil)
+            } catch {
+                completionHandler(false, error)
+            }
+        }
+        task.resume()
+    }
 }
 
