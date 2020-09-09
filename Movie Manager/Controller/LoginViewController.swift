@@ -48,6 +48,7 @@ class LoginViewController: UIViewController {
         }
     }
     
+    // completion handler for login response
     func handleLoginResponse(success: Bool, error: Error?) {
         print(TMDBClient.Auth.requestToken )
     }
