@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -107,7 +107,6 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="aC6-zL-px5" id="MCt-82-aGg"/>
-                        <outlet property="emailTextField1" destination="aC6-zL-px5" id="OGk-FB-GnC"/>
                         <outlet property="loginButton" destination="jEo-n8-Msz" id="TFM-dm-Cps"/>
                         <outlet property="loginViaWebsiteButton" destination="mVp-Im-tuY" id="jK6-7N-6rK"/>
                         <outlet property="passwordTextField" destination="5J0-N5-ExM" id="4fn-QQ-jps"/>
