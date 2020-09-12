@@ -50,6 +50,18 @@ class LoginViewController: UIViewController {
     
     // completion handler for login response
     func handleLoginResponse(success: Bool, error: Error?) {
-        print(TMDBClient.Auth.requestToken )
+        print(TMDBClient.Auth.requestToken)
+        if success {
+            TMDBClient.createSessionId(completionHandler: handleSessionResponse(success:error:))
+        }
+    }
+    
+    // completion handler for session response
+    func handleSessionResponse(success: Bool, error: Error?) {
+        if success {
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "completeLogin", sender: nil)
+            }
+        }
     }
 }

@@ -85,7 +85,7 @@ class TMDBClient {
         task.resume()
     }
     
-    // login
+    // login request
     class func login(username: String, password: String, completionHandler: @escaping (Bool, Error?) -> Void) {
         var request = URLRequest(url: Endpoints.login.url)
         request.httpMethod = "POST"
