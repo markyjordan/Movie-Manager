@@ -37,7 +37,9 @@ class LoginViewController: UIViewController {
     @IBAction func loginViaWebsiteTapped(_ sender: UIButton) {
         TMDBClient.getRequestToken { (success, error) in
             if success {
-                
+                DispatchQueue.main.async {
+                    UIApplication.shared.open(TMDBClient.Endpoints.webAuth.url, options: [:], completionHandler: nil)
+                }
             }
         }
     }
