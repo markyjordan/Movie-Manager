@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
         let components = URLComponents(url: url, resolvingAgainstBaseURL: true)
         
+        // check to see if the url parameter opened is the right url
         if components?.scheme == "themoviemanager" && components?.path == "authenticate" {
             let loginVC = window?.rootViewController as! LoginViewController
             TMDBClient.createSessionId(completionHandler: loginVC.handleSessionResponse(success:error:))
