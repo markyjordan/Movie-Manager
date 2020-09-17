@@ -37,6 +37,8 @@ class LoginViewController: UIViewController {
     @IBAction func loginViaWebsiteTapped(_ sender: UIButton) {
         TMDBClient.getRequestToken { (success, error) in
             if success {
+                
+                // updates the UI with a browser containing the login page
                 DispatchQueue.main.async {
                     UIApplication.shared.open(TMDBClient.Endpoints.webAuth.url, options: [:], completionHandler: nil)
                 }
