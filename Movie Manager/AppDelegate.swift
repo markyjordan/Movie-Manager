@@ -19,7 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // UIApplication Delegate Methods
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        // break down the url parameter into components
         let components = URLComponents(url: url, resolvingAgainstBaseURL: true)
         
         // check to see if the url parameter opened is the right url
