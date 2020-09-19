@@ -54,7 +54,7 @@ class TMDBClient {
     
     // MARK: - Network Requests
     
-    // get the API request token
+    // get an API request token
     class func getRequestToken(completionHandler: @escaping (Bool, Error?) -> Void) {
         let task = URLSession.shared.dataTask(with: Endpoints.getRequestToken.url) { data, response, error in
             guard let data = data else {
@@ -98,6 +98,7 @@ class TMDBClient {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         let body = LoginRequest(username: username, password: password, requestToken: Auth.requestToken)
         request.httpBody = try! JSONEncoder().encode(body)
+        
         let task = URLSession.shared.dataTask(with: request) { (data, response, error ) in
             guard let data = data else {
                 completionHandler(false, error)
@@ -117,12 +118,13 @@ class TMDBClient {
     
     // create new session id
     class func createSessionId(completionHandler: @escaping (Bool, Error?) -> Void) {
-    var request = URLRequest(url: Endpoints.createSessionId.url)
+        var request = URLRequest(url: Endpoints.createSessionId.url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         let body = PostSession(requestToken: Auth.requestToken)
         request.httpBody = try! JSONEncoder().encode(body)
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error ) in
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let data = data else {
                 completionHandler(false, error)
                 return
@@ -135,6 +137,25 @@ class TMDBClient {
             } catch {
                 completionHandler(false, error)
             }
+        }
+        task.resume()
+    }
+    
+    // logout request
+    class func logoutRequest(completionHandler: @escaping () -> Void) {
+        // prepare the logout request
+        var request = URLRequest(url: TMDBClient.Endpoints.logout.url)
+        request.httpMethod = "DELETE"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        let body = LogoutRequest(sessionId: Auth.sessionId)
+        request.httpBody = try! JSONEncoder().encode(body)
+        
+        // initiate the logout request
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            // set the current request token and session idea to an empty string
+            Auth.requestToken = ""
+            Auth.sessionId = ""
+            completionHandler()
         }
         task.resume()
     }
