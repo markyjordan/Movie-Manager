@@ -104,6 +104,7 @@ class TMDBClient {
                 completionHandler(false, error)
                 return
             }
+            // parse the data
             do {
                 let jsonDecoder = JSONDecoder()
                 let responseObject = try jsonDecoder.decode(RequestTokenResponse.self, from: data)
@@ -118,17 +119,20 @@ class TMDBClient {
     
     // create new session id
     class func createSessionId(completionHandler: @escaping (Bool, Error?) -> Void) {
+        // prepare the session id request
         var request = URLRequest(url: Endpoints.createSessionId.url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         let body = PostSession(requestToken: Auth.requestToken)
         request.httpBody = try! JSONEncoder().encode(body)
         
+        // initiate the session id request
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let data = data else {
                 completionHandler(false, error)
                 return
             }
+            // parse the data
             do {
                 let jsonDecoder = JSONDecoder()
                 let responseObject = try jsonDecoder.decode(SessionResponse.self, from: data)
