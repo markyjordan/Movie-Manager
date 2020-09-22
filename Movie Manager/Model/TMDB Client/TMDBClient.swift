@@ -91,6 +91,11 @@ class TMDBClient {
         task.resume()
     }
     
+    // 'GET' requests
+    class func taskForGETRequest<ResponseType: Decodable>(url: URL, responseType: ResponseType, completionHandler: @escaping (ResponseType?, Error?) -> Void) {
+        
+    }
+    
     // login request
     class func login(username: String, password: String, completionHandler: @escaping (Bool, Error?) -> Void) {
         var request = URLRequest(url: Endpoints.login.url)
@@ -163,5 +168,8 @@ class TMDBClient {
         }
         task.resume()
     }
+    
+
 }
+
 
