@@ -92,8 +92,26 @@ class TMDBClient {
     }
     
     // 'GET' requests
-    class func taskForGETRequest<ResponseType: Decodable>(url: URL, responseType: ResponseType, completionHandler: @escaping (ResponseType?, Error?) -> Void) {
-        
+    class func taskForGETRequest<ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, completionHandler: @escaping (ResponseType?, Error?) -> Void) {
+        // create task to retrieve contents of specified url
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            // check if data was returned by the server
+            guard let data = data else {
+                completionHandler(nil, error)
+                return
+            }
+            // parse the retrieved data
+            do {
+                let responseObject = try JSONDecoder().decode(ResponseType.self, from: data)
+                // pass back the responseObject and nil for the error if data parsing is successful
+                completionHandler(responseObject, nil)
+                return
+            } catch {
+                completionHandler(nil, error)
+                return
+            }
+        }
+        task.resume()
     }
     
     // login request
