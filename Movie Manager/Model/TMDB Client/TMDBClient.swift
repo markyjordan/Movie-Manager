@@ -52,6 +52,31 @@ class TMDBClient {
         }
     }
     
+    // MARK: - Data Tasks
+    
+    // task for 'GET' request
+    class func taskForGETRequest<ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, completionHandler: @escaping (ResponseType?, Error?) -> Void) {
+        // create task to retrieve contents of specified url
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            // check if data was returned by the server
+            guard let data = data else {
+                completionHandler(nil, error)
+                return
+            }
+            // parse the retrieved data
+            do {
+                let responseObject = try JSONDecoder().decode(ResponseType.self, from: data)
+                // pass back the responseObject and nil for the error if data parsing is successful
+                completionHandler(responseObject, nil)
+                return
+            } catch {
+                completionHandler(nil, error)
+                return
+            }
+        }
+        task.resume()
+    }
+    
     // MARK: - Network Requests
     
     // get an API request token
@@ -75,43 +100,13 @@ class TMDBClient {
     
     // get the watchlist
     class func getWatchlist(completionHandler: @escaping ([Movie], Error?) -> Void) {
-        let task = URLSession.shared.dataTask(with: Endpoints.getWatchlist.url) { data, response, error in
-            guard let data = data else {
-                completionHandler([], error)
-                return
-            }
-            let jsonDecoder = JSONDecoder()
-            do {
-                let responseObject = try jsonDecoder.decode(MovieResults.self, from: data)
-                completionHandler(responseObject.results, nil)
-            } catch {
+        taskForGETRequest(url: Endpoints.getWatchlist.url, responseType: MovieResults.self) { response, error in
+            if let response = response {
+                completionHandler(response.results, nil)
+            } else {
                 completionHandler([], error)
             }
         }
-        task.resume()
-    }
-    
-    // 'GET' requests
-    class func taskForGETRequest<ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, completionHandler: @escaping (ResponseType?, Error?) -> Void) {
-        // create task to retrieve contents of specified url
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            // check if data was returned by the server
-            guard let data = data else {
-                completionHandler(nil, error)
-                return
-            }
-            // parse the retrieved data
-            do {
-                let responseObject = try JSONDecoder().decode(ResponseType.self, from: data)
-                // pass back the responseObject and nil for the error if data parsing is successful
-                completionHandler(responseObject, nil)
-                return
-            } catch {
-                completionHandler(nil, error)
-                return
-            }
-        }
-        task.resume()
     }
     
     // login request
