@@ -81,21 +81,14 @@ class TMDBClient {
     
     // get an API request token
     class func getRequestToken(completionHandler: @escaping (Bool, Error?) -> Void) {
-        let task = URLSession.shared.dataTask(with: Endpoints.getRequestToken.url) { data, response, error in
-            guard let data = data else {
-                completionHandler(false, error)
-                return
-            }
-            let jsonDecoder = JSONDecoder()
-            do {
-                let responseObject = try jsonDecoder.decode(RequestTokenResponse.self, from: data)
-                Auth.requestToken = responseObject.requestToken
+        taskForGETRequest(url: Endpoints.getRequestToken.url, responseType: RequestTokenResponse.self) { response, error in
+            if let response = response {
+                Auth.requestToken = response.requestToken
                 completionHandler(true, nil)
-            } catch {
+            } else {
                 completionHandler(false, error)
             }
         }
-        task.resume()
     }
     
     // get the watchlist
