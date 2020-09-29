@@ -60,17 +60,23 @@ class TMDBClient {
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             // check if data was returned by the server
             guard let data = data else {
-                completionHandler(nil, error)
+                DispatchQueue.main.async {
+                    completionHandler(nil, error)
+                }
                 return
             }
             // parse the retrieved data
             do {
                 let responseObject = try JSONDecoder().decode(ResponseType.self, from: data)
-                // pass back the responseObject and nil for the error if data parsing is successful
-                completionHandler(responseObject, nil)
+                DispatchQueue.main.async {
+                    // pass back the responseObject and nil for the error if data parsing is successful
+                    completionHandler(responseObject, nil)
+                }
                 return
             } catch {
-                completionHandler(nil, error)
+                DispatchQueue.main.async {
+                    completionHandler(nil, error)
+                }
                 return
             }
         }
