@@ -39,9 +39,7 @@ class LoginViewController: UIViewController {
             if success {
                 
                 // updates the UI with a browser containing the login page
-                DispatchQueue.main.async {
-                    UIApplication.shared.open(TMDBClient.Endpoints.webAuth.url, options: [:], completionHandler: nil)
-                }
+                UIApplication.shared.open(TMDBClient.Endpoints.webAuth.url, options: [:], completionHandler: nil)
             }
         }
     }
@@ -50,9 +48,7 @@ class LoginViewController: UIViewController {
     func handleRequestTokenResponse(success: Bool, error: Error?) {
         if success {
             print(TMDBClient.Auth.requestToken)
-            DispatchQueue.main.async {
-                TMDBClient.login(username: self.emailTextField.text ?? "", password: self.passwordTextField.text ?? "", completionHandler: self.handleLoginResponse(success:error:) )
-            }
+            TMDBClient.login(username: self.emailTextField.text ?? "", password: self.passwordTextField.text ?? "", completionHandler: self.handleLoginResponse(success:error:) )
         }
     }
     
