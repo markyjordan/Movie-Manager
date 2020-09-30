@@ -52,10 +52,12 @@ class TMDBClient {
         }
     }
     
+    
     // MARK: - Data Tasks
     
     // task for 'GET' request
     class func taskForGETRequest<ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, completionHandler: @escaping (ResponseType?, Error?) -> Void) {
+        
         // create task to retrieve contents of specified url
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             // check if data was returned by the server
@@ -82,6 +84,29 @@ class TMDBClient {
         }
         task.resume()
     }
+    
+    // task for 'POST' request
+    class func taskForPOSTRequest<RequestType: Encodable, ResponseType: Decodable>(url: URL, requestBody: RequestType, responseType: ResponseType.Type, completionHandler: @escaping (ResponseType?, Error?) -> Void) {
+        
+        // create request body
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.httpBody = try! JSONEncoder().encode(requestBody)
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        // create task to submit POST request
+        let task = URLSession.shared.dataTask(with: request)
+            { data, response, error } in
+            // check if data was returned by the server
+            guard let data = data else {
+                DispatchQueue.main.async {
+                    completionHandler(nil, error)
+                }
+                return
+            }
+            // parse the retrieved data
+    }
+    
     
     // MARK: - Network Requests
     
@@ -136,6 +161,7 @@ class TMDBClient {
     
     // create new session id
     class func createSessionId(completionHandler: @escaping (Bool, Error?) -> Void) {
+        
         // prepare the session id request
         var request = URLRequest(url: Endpoints.createSessionId.url)
         request.httpMethod = "POST"
@@ -164,6 +190,7 @@ class TMDBClient {
     
     // logout request
     class func logoutRequest(completionHandler: @escaping () -> Void) {
+        
         // prepare the logout request
         var request = URLRequest(url: TMDBClient.Endpoints.logout.url)
         request.httpMethod = "DELETE"
