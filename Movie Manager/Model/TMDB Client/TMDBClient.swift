@@ -95,8 +95,7 @@ class TMDBClient {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         // create task to submit POST request
-        let task = URLSession.shared.dataTask(with: request)
-            { data, response, error } in
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             // check if data was returned by the server
             guard let data = data else {
                 DispatchQueue.main.async {
@@ -105,6 +104,21 @@ class TMDBClient {
                 return
             }
             // parse the retrieved data
+            do {
+                let responseObject = try JSONDecoder().decode(ResponseType.self, from: data)
+                DispatchQueue.main.async {
+                    // pass back the responseObject and nil for the error if data parsing is successful
+                    completionHandler(responseObject, nil)
+                }
+                return
+            } catch {
+                DispatchQueue.main.async {
+                    completionHandler(nil, error)
+                }
+                return
+            }
+        }
+        task.resume()
     }
     
     
@@ -135,28 +149,19 @@ class TMDBClient {
     
     // login request
     class func login(username: String, password: String, completionHandler: @escaping (Bool, Error?) -> Void) {
-        var request = URLRequest(url: Endpoints.login.url)
-        request.httpMethod = "POST"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        // create a request body
         let body = LoginRequest(username: username, password: password, requestToken: Auth.requestToken)
-        request.httpBody = try! JSONEncoder().encode(body)
         
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error ) in
-            guard let data = data else {
-                completionHandler(false, error)
-                return
-            }
-            // parse the data
-            do {
-                let jsonDecoder = JSONDecoder()
-                let responseObject = try jsonDecoder.decode(RequestTokenResponse.self, from: data)
-                Auth.requestToken = responseObject.requestToken
+        // create task to submit POST request
+        taskForPOSTRequest(url: Endpoints.login.url, requestBody: body, responseType: RequestTokenResponse.self) { (response, error) in
+            if let response = response {
+                // set the requestToken in the Auth struct to the response object's requestToken property
+                Auth.requestToken = response.requestToken
                 completionHandler(true, nil)
-            } catch {
-                completionHandler(false, error)
+            } else {
+                completionHandler(false, nil)
             }
         }
-        task.resume()
     }
     
     // create new session id
