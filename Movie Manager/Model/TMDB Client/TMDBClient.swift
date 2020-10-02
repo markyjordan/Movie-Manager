@@ -149,7 +149,8 @@ class TMDBClient {
     
     // login request
     class func login(username: String, password: String, completionHandler: @escaping (Bool, Error?) -> Void) {
-        // create a request body
+        
+        // create the request body
         let body = LoginRequest(username: username, password: password, requestToken: Auth.requestToken)
         
         // create task to submit POST request
@@ -167,30 +168,19 @@ class TMDBClient {
     // create new session id
     class func createSessionId(completionHandler: @escaping (Bool, Error?) -> Void) {
         
-        // prepare the session id request
-        var request = URLRequest(url: Endpoints.createSessionId.url)
-        request.httpMethod = "POST"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        // create the request body
         let body = PostSession(requestToken: Auth.requestToken)
-        request.httpBody = try! JSONEncoder().encode(body)
         
-        // initiate the session id request
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard let data = data else {
-                completionHandler(false, error)
-                return
-            }
-            // parse the data
-            do {
-                let jsonDecoder = JSONDecoder()
-                let responseObject = try jsonDecoder.decode(SessionResponse.self, from: data)
-                Auth.sessionId = responseObject.sessionId
+        // create task to submit POST request
+        taskForPOSTRequest(url: Endpoints.createSessionId.url, requestBody: body, responseType: SessionResponse.self) { (response, error) in
+            if let response = response {
+                // set the sessionId in the Auth struct to the response object's sessionId property
+                Auth.sessionId = response.sessionId
                 completionHandler(true, nil)
-            } catch {
+            } else {
                 completionHandler(false, error)
             }
         }
-        task.resume()
     }
     
     // logout request
