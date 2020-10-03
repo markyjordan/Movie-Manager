@@ -63,9 +63,7 @@ class LoginViewController: UIViewController {
     // completion handler for session response
     func handleSessionResponse(success: Bool, error: Error?) {
         if success {
-            DispatchQueue.main.async {
                 self.performSegue(withIdentifier: "completeLogin", sender: nil)
-            }
         }
     }
 }
