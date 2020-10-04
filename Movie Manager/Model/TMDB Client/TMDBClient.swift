@@ -202,8 +202,6 @@ class TMDBClient {
         }
         task.resume()
     }
-    
-
 }
 
 
