@@ -139,9 +139,20 @@ class TMDBClient {
         }
     }
     
-    // get the watchlist
+    // get the watch list
     class func getWatchlist(completionHandler: @escaping ([Movie], Error?) -> Void) {
         taskForGETRequest(url: Endpoints.getWatchlist.url, responseType: MovieResults.self) { response, error in
+            if let response = response {
+                completionHandler(response.results, nil)
+            } else {
+                completionHandler([], error)
+            }
+        }
+    }
+    
+    // get the favorites list
+    class func getFavorites(completionHandler: @escaping ([Movie], Error?) -> Void) {
+        taskForGETRequest(url: Endpoints.getFavorites.url, responseType: MovieResults.self) { (response, error) in
             if let response = response {
                 completionHandler(response.results, nil)
             } else {
