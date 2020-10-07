@@ -24,11 +24,12 @@ class TMDBClient {
         
         case getRequestToken
         case getWatchlist
+        case getFavorites
         case login
         case createSessionId
         case webAuth
         case logout
-        case getFavorites
+        case search(String)
         
         var stringValue: String {
             switch self {
@@ -46,6 +47,8 @@ class TMDBClient {
                 return Endpoints.base + "/authentication/session/new" + Endpoints.apiKeyParam
             case .logout:
                 return Endpoints.base + "/authentication/session" + Endpoints.apiKeyParam
+            case .search(let query):
+                return Endpoints.base + "/search/movie" + Endpoints.apiKeyParam + "&query=\(query)"
             }
         }
         
