@@ -219,6 +219,18 @@ class TMDBClient {
         }
         task.resume()
     }
+    
+    // search movies request
+    class func search(query: String, completionHandler: @escaping ([Movie], Error?) -> Void) {
+        
+        taskForGETRequest(url: Endpoints.search(query).url, responseType: MovieResults.self) { (response, error) in
+            if let response = response {
+                completionHandler(response.results, nil)
+            } else {
+                completionHandler([], error)
+            }
+        }
+    }
 }
 
 
