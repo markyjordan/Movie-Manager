@@ -48,7 +48,7 @@ class TMDBClient {
             case .logout:
                 return Endpoints.base + "/authentication/session" + Endpoints.apiKeyParam
             case .search(let query):
-                return Endpoints.base + "/search/movie" + Endpoints.apiKeyParam + "&query=\(query)"
+                return Endpoints.base + "/search/movie" + Endpoints.apiKeyParam + "&query=\(query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")"
             }
         }
         
@@ -224,7 +224,7 @@ class TMDBClient {
     class func search(query: String, completionHandler: @escaping ([Movie], Error?) -> Void) {
         
         taskForGETRequest(url: Endpoints.search(query).url, responseType: MovieResults.self) { (response, error) in
-            if let response = response {
+            if let response = response { 
                 completionHandler(response.results, nil)
             } else {
                 completionHandler([], error)
