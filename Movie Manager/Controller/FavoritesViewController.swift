@@ -10,6 +10,8 @@ import UIKit
 
 class FavoritesViewController: UIViewController {
 
+    // MARK: - Outlets/Properties
+    
     @IBOutlet weak var tableView: UITableView!
     
     var selectedIndex = 0
