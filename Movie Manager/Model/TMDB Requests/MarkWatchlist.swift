@@ -8,7 +8,16 @@
 
 import Foundation
 
-class MarkWatchlist {
+struct MarkWatchlist {
     
+    let mediaType: String
+    let mediaId: Int
+    let watchList: Bool
     
+    enum CodingKeys: String, CodingKey {
+        
+        case mediaType = "media_type"
+        case mediaId = "media_id"
+        case watchList = "watchlist"
+    }
 }
