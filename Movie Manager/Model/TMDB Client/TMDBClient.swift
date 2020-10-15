@@ -238,12 +238,15 @@ class TMDBClient {
     // mark watchlist request
     class func markWatchlist(movieId: Int, watchlist: Bool, completion: @escaping (Bool, Error?) -> Void) {
         let body = MarkWatchlist(mediaType: "movie", mediaId: movieId, watchList: watchlist)
-        taskForPOSTRequest(url: Endpoints.markWatchlist.url, requestBody: Encodable, responseType: TMDBResponse.self) { (response, error) in
+        taskForPOSTRequest(url: Endpoints.markWatchlist.url, requestBody: body, responseType: TMDBResponse.self) { (response, error) in
             if let response = response {
-                
+                    completion(reponse.statusCode == 1 || response.statusCode == 12 || response.statusCode == 13, nil)
+            } else {
+                completion(false, error)
             }
         }
     }
 }
+
 
 
