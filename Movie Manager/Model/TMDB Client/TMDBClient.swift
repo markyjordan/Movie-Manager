@@ -264,6 +264,16 @@ class TMDBClient {
             }
         }
     }
+    
+    // download movie poster image request
+    class func downloadPosterImage(path: String, completionHandler: @escaping (Data?, Error?) -> Void) {
+        let task = URLSession.shared.dataTask(with: Endpoints.posterImage(path).url) { data, response, error in
+            DispatchQueue.main.async {
+                completionHandler(data, error)
+            }
+        }
+        task.resume()
+    }
 }
 
 
