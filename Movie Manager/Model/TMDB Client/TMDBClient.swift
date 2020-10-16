@@ -31,6 +31,7 @@ class TMDBClient {
         case logout
         case search(String)
         case markWatchlist
+        case markFavorite
         
         var stringValue: String {
             switch self {
@@ -52,6 +53,8 @@ class TMDBClient {
                 return Endpoints.base + "/search/movie" + Endpoints.apiKeyParam + "&query=\(query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")"
             case .markWatchlist:
                 return Endpoints.base + "/account/\(Auth.accountId)/watchlist" + Endpoints.apiKeyParam
+            case .markFavorite:
+                return Endpoints.base + "/account/\(Auth.accountId)/favorite" + Endpoints.apiKeyParam
             }
         }
         
