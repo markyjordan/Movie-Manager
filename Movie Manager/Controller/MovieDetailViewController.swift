@@ -38,6 +38,20 @@ class MovieDetailViewController: UIViewController {
         // based on whether a movie is on the watchlist or favorites list
         toggleBarButton(watchlistBarButtonItem, enabled: isWatchlist)
         toggleBarButton(favoritesBarButtonItem, enabled: isFavorite)
+        
+        // download poster image
+        if let posterImagePath = movie.posterPath {
+            TMDBClient.downloadPosterImage(path: posterImagePath) { (data, error) in
+                guard let data = data else {
+                    return
+                }
+                // convert the retrieved data into a UIImage type
+                let image = UIImage(data: data)
+                
+                // set the imageView property to the newly converted image
+                self.imageView.image = image
+            }
+        }
     }
     
     // MARK: - Actions
