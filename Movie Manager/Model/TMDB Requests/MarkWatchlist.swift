@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MarkWatchlist {
+struct MarkWatchlist: Codable {
     
     let mediaType: String
     let mediaId: Int
