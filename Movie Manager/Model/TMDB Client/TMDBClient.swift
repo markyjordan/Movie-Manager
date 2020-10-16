@@ -32,6 +32,7 @@ class TMDBClient {
         case search(String)
         case markWatchlist
         case markFavorite
+        case posterImage(String)
         
         var stringValue: String {
             switch self {
@@ -55,6 +56,8 @@ class TMDBClient {
                 return Endpoints.base + "/account/\(Auth.accountId)/watchlist" + Endpoints.apiKeyParam
             case .markFavorite:
                 return Endpoints.base + "/account/\(Auth.accountId)/favorite" + Endpoints.apiKeyParam
+            case .posterImage(let posterPath):
+                return "https://image.tmdb.org/t/p/w500/" + posterPath
             }
         }
         
