@@ -34,7 +34,8 @@ class MovieDetailViewController: UIViewController {
         // set navigation title to match the displayed movie
         navigationItem.title = movie.title
         
-        
+        // set the bar buttons to reflect a tint color
+        // based on whether a movie is on the watchlist or favorites list
         toggleBarButton(watchlistBarButtonItem, enabled: isWatchlist)
         toggleBarButton(favoritesBarButtonItem, enabled: isFavorite)
     }
