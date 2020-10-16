@@ -42,11 +42,11 @@ class MovieDetailViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func watchlistButtonTapped(_ sender: UIBarButtonItem) {
-        TMDBClient.markWatchlist(movieId: movie.id, watchlist: !isWatchlist, completion: handleWatchlistResponse(success:error:))
+        TMDBClient.markWatchlist(movieId: movie.id, watchlist: !isWatchlist, completionHandler: handleWatchlistResponse(success:error:))
     }
     
     @IBAction func favoriteButtonTapped(_ sender: UIBarButtonItem) {
-
+        TMDBClient.markFavorite(moviedId: movie.id, favorite: !isFavorite, completionHandler: handleFavoriteResponse(success:error:)  )
     }
     
     func toggleBarButton(_ button: UIBarButtonItem, enabled: Bool) {
@@ -70,6 +70,17 @@ class MovieDetailViewController: UIViewController {
             }
             // update the bar button tint to reflect the add/removal of a movie
             toggleBarButton(watchlistBarButtonItem, enabled: isWatchlist)
+        }
+    }
+    
+    func handleFavoriteResponse(success: Bool, error: Error?) {
+        if success {
+            if isFavorite {
+                MovieModel.favorites = MovieModel.favorites.filter() { $0 != self.movie }
+            } else {
+                MovieModel.favorites.append(movie)
+            }
+            toggleBarButton(favoritesBarButtonItem, enabled: isFavorite)
         }
     }
 }
