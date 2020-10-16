@@ -243,9 +243,21 @@ class TMDBClient {
         let body = MarkWatchlist(mediaType: "movie", mediaId: movieId, watchList: watchlist)
         taskForPOSTRequest(url: Endpoints.markWatchlist.url, requestBody: body, responseType: TMDBResponse.self) { (response, error) in
             if let response = response {
-                    completion(response.statusCode == 1 || response.statusCode == 12 || response.statusCode == 13, nil)
+                completion(response.statusCode == 1 || response.statusCode == 12 || response.statusCode == 13, nil)
             } else {
                 completion(false, error)
+            }
+        }
+    }
+    
+    // mark favorite request
+    class func markFavorite(moviedId: Int, favorite: Bool, completionHandler: @escaping (Bool, Error?) -> Void) {
+        let body = MarkFavorite(mediaType: "movie", mediaId: moviedId, favorite: favorite)
+        taskForPOSTRequest(url: Endpoints.markFavorite.url, requestBody: body, responseType: TMDBResponse.self) { (response, error) in
+            if let response = response {
+                completionHandler(response.statusCode == 1 || response.statusCode == 12 || response.statusCode == 13, nil)
+            } else {
+                completionHandler(false, error)
             }
         }
     }
