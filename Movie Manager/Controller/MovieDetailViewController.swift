@@ -42,7 +42,7 @@ class MovieDetailViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func watchlistButtonTapped(_ sender: UIBarButtonItem) {
-        
+        TMDBClient.markWatchlist(movieId: movie.id, watchlist: !isWatchlist, completion: handleWatchlistResponse(success:error:))
     }
     
     @IBAction func favoriteButtonTapped(_ sender: UIBarButtonItem) {
@@ -54,6 +54,22 @@ class MovieDetailViewController: UIViewController {
             button.tintColor = UIColor.primaryDark
         } else {
             button.tintColor = UIColor.gray
+        }
+    }
+    
+    // MARK: - Completion Handlers
+    
+    func handleWatchlistResponse(success: Bool, error: Error?) {
+        if success {
+            // if the movie was already on the watchlist (i.e. Bool = true),
+            // pressing the mark watchlist button would successfully remove the movie from the watchlist
+            if isWatchlist {
+                MovieModel.watchlist = MovieModel.watchlist.filter() { $0 != self.movie }
+            } else {
+                MovieModel.watchlist.append(movie)
+            }
+            // update the bar button tint to reflect the add/removal of a movie
+            toggleBarButton(watchlistBarButtonItem, enabled: isWatchlist)
         }
     }
 }
