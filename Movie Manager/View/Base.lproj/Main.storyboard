@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ozo-52-5xZ">
-                                <rect key="frame" x="16" y="328" width="343" height="229"/>
+                                <rect key="frame" x="16" y="269.5" width="343" height="229"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlV-hw-MFf" userLabel="Login with Email">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
@@ -102,9 +102,9 @@
                             <constraint firstItem="ozo-52-5xZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XE6-gd-E4g"/>
                             <constraint firstItem="M8Y-e4-Esw" firstAttribute="top" secondItem="3ky-mf-fcm" secondAttribute="bottom" constant="8" id="Xbd-02-4av"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ubB-pI-4Tm" secondAttribute="bottom" constant="20" id="eV7-ba-Xtz"/>
-                            <constraint firstItem="ozo-52-5xZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="109" id="jxI-Qf-Nz6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ozo-52-5xZ" secondAttribute="trailing" constant="16" id="nEd-RU-sgY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ky-mf-fcm" secondAttribute="trailing" constant="16" id="oaF-pm-Xwl"/>
+                            <constraint firstItem="ozo-52-5xZ" firstAttribute="top" secondItem="M8Y-e4-Esw" secondAttribute="bottom" constant="50" id="uPM-wl-iUb"/>
                             <constraint firstItem="ubB-pI-4Tm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xgh-R6-XmH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M8Y-e4-Esw" secondAttribute="trailing" constant="16" id="zI1-DF-LWe"/>
                             <constraint firstItem="3ky-mf-fcm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zOc-j9-QmG"/>
