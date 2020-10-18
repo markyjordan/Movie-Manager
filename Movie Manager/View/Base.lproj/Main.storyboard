@@ -88,9 +88,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bMG-d5-ToU">
-                                <rect key="frame" x="177" y="565" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bMG-d5-ToU">
+                                <rect key="frame" x="178" y="548.5" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -99,6 +98,7 @@
                             <constraint firstItem="3ky-mf-fcm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="CRA-Qt-bGG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ubB-pI-4Tm" secondAttribute="trailing" constant="16" id="HBc-Dp-qOk"/>
                             <constraint firstItem="M8Y-e4-Esw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QgH-TK-c8G"/>
+                            <constraint firstItem="bMG-d5-ToU" firstAttribute="top" secondItem="ozo-52-5xZ" secondAttribute="bottom" constant="50" id="TzV-M7-3CQ"/>
                             <constraint firstItem="ozo-52-5xZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XE6-gd-E4g"/>
                             <constraint firstItem="M8Y-e4-Esw" firstAttribute="top" secondItem="3ky-mf-fcm" secondAttribute="bottom" constant="8" id="Xbd-02-4av"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ubB-pI-4Tm" secondAttribute="bottom" constant="20" id="eV7-ba-Xtz"/>
@@ -120,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-354" y="29"/>
+            <point key="canvasLocation" x="-354.39999999999998" y="28.335832083958024"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9Wt-UO-Z1i">
