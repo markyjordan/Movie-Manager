@@ -88,7 +88,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bMG-d5-ToU">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bMG-d5-ToU">
                                 <rect key="frame" x="177.5" y="548.5" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
