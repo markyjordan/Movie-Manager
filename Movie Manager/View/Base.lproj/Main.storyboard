@@ -112,6 +112,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="bMG-d5-ToU" id="R9H-wW-j4w"/>
                         <outlet property="emailTextField" destination="aC6-zL-px5" id="MCt-82-aGg"/>
                         <outlet property="loginButton" destination="jEo-n8-Msz" id="TFM-dm-Cps"/>
                         <outlet property="loginViaWebsiteButton" destination="mVp-Im-tuY" id="jK6-7N-6rK"/>
