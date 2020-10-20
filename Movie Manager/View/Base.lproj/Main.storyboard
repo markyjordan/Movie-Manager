@@ -88,8 +88,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bMG-d5-ToU">
-                                <rect key="frame" x="178" y="548.5" width="20" height="20"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bMG-d5-ToU">
+                                <rect key="frame" x="177.5" y="548.5" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -106,6 +106,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ky-mf-fcm" secondAttribute="trailing" constant="16" id="oaF-pm-Xwl"/>
                             <constraint firstItem="ozo-52-5xZ" firstAttribute="top" secondItem="M8Y-e4-Esw" secondAttribute="bottom" constant="50" id="uPM-wl-iUb"/>
                             <constraint firstItem="ubB-pI-4Tm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xgh-R6-XmH"/>
+                            <constraint firstItem="bMG-d5-ToU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zGB-eG-Jrg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M8Y-e4-Esw" secondAttribute="trailing" constant="16" id="zI1-DF-LWe"/>
                             <constraint firstItem="3ky-mf-fcm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zOc-j9-QmG"/>
                         </constraints>
