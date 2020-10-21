@@ -67,4 +67,12 @@ class LoginViewController: UIViewController {
                 self.performSegue(withIdentifier: "completeLogin", sender: nil)
         }
     }
+    
+    func setLoggingIn(_ loggingIn: Bool) {
+        if loggingIn {
+            activityIndicator.startAnimating()
+        } else {
+            activityIndicator.stopAnimating()
+        }
+    }
 }
