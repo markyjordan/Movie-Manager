@@ -31,11 +31,13 @@ class LoginViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func loginTapped(_ sender: UIButton) {
+        setLoggingIn(true)
         TMDBClient.getRequestToken(completionHandler: handleRequestTokenResponse(success:error:))
         performSegue(withIdentifier: "completeLogin", sender: nil)
     }
     
     @IBAction func loginViaWebsiteTapped(_ sender: UIButton) {
+        setLoggingIn(false)
         TMDBClient.getRequestToken { (success, error) in
             if success {
                 
