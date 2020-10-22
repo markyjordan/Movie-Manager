@@ -65,6 +65,7 @@ class LoginViewController: UIViewController {
     
     // completion handler for session response
     func handleSessionResponse(success: Bool, error: Error?) {
+        setLoggingIn(false)
         if success {
                 self.performSegue(withIdentifier: "completeLogin", sender: nil)
         }
