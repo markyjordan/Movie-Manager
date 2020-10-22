@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginViaWebsiteTapped(_ sender: UIButton) {
-        setLoggingIn(false)
+        setLoggingIn(true)
         TMDBClient.getRequestToken { (success, error) in
             if success {
                 
