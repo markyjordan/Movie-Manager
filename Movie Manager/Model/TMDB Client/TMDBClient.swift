@@ -99,7 +99,7 @@ class TMDBClient {
         }
         task.resume()
         
-        // taskForGETRequest will now return a value that we can access in the search method
+        // taskForGETRequest will now return a value that we can access in the network requests methods
         return task
     }
     
@@ -233,8 +233,7 @@ class TMDBClient {
     }
     
     // search movies request
-    class func search(query: String, completionHandler: @escaping ([Movie], Error?) -> Void) {
-        
+    class func search(query: String, completionHandler: @escaping ([Movie], Error?) -> Void) -> URLSessionTask {
         let task = taskForGETRequest(url: Endpoints.search(query).url, responseType: MovieResults.self) { (response, error) in
             if let response = response { 
                 completionHandler(response.results, nil)
@@ -242,6 +241,7 @@ class TMDBClient {
                 completionHandler([], error)
             }
         }
+        return task
     }
     
     // mark watchlist request
