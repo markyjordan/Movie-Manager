@@ -18,6 +18,8 @@ class SearchViewController: UIViewController {
     
     var selectedIndex = 0
     
+    var currentSearchTask: URLSessionTask?
+    
     // show detail view upon tap of a table view cell
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
