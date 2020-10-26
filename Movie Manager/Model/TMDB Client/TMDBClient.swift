@@ -71,7 +71,7 @@ class TMDBClient {
     // MARK: - Data Tasks
     
     // task for 'GET' request
-    class func taskForGETRequest<ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, completionHandler: @escaping (ResponseType?, Error?) -> Void) -> URLSessionTask {
+    @discardableResult class func taskForGETRequest<ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, completionHandler: @escaping (ResponseType?, Error?) -> Void) -> URLSessionTask {
         
         // create task to retrieve contents of specified url
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
