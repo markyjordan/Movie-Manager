@@ -52,6 +52,8 @@ class LoginViewController: UIViewController {
         if success {
             print(TMDBClient.Auth.requestToken)
             TMDBClient.login(username: self.emailTextField.text ?? "", password: self.passwordTextField.text ?? "", completionHandler: self.handleLoginResponse(success:error:) )
+        } else {
+            showLoginFailure(message: error?.localizedDescription ?? "")
         }
     }
     
