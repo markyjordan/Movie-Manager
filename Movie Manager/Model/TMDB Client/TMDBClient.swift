@@ -93,6 +93,9 @@ class TMDBClient {
             } catch {
                 do {
                     let errorResponse = try JSONDecoder().decode(TMDBResponse.self, from: data)
+                    DispatchQueue.main.async {
+                        completionHandler(nil, errorResponse)
+                    }
                 } catch {
                     DispatchQueue.main.async {
                         completionHandler(nil, error)
