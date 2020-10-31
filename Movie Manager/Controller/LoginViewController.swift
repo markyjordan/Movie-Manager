@@ -62,6 +62,8 @@ class LoginViewController: UIViewController {
         print(TMDBClient.Auth.requestToken)
         if success {
             TMDBClient.createSessionId(completionHandler: handleSessionResponse(success:error:))
+        } else {
+            showLoginFailure(message: error?.localizedDescription ?? "")
         }
     }
     
