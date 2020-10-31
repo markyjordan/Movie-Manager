@@ -71,7 +71,9 @@ class LoginViewController: UIViewController {
     func handleSessionResponse(success: Bool, error: Error?) {
         setLoggingIn(false)
         if success {
-                self.performSegue(withIdentifier: "completeLogin", sender: nil)
+            self.performSegue(withIdentifier: "completeLogin", sender: nil)
+        } else {
+            showLoginFailure(message: error?.localizedDescription ?? "")
         }
     }
     
